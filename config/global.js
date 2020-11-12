@@ -16,4 +16,5 @@ export const GlobalStyles = createGlobalStyle`
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    font-family: 'IBM Plex Mono', monospace;
   }`;
