@@ -1,10 +1,10 @@
 
-
+import CustomButton from "../components/Buttons"
 const Home = () => (
   <>
-<h1>hi portfolio</h1>
+    <p>hi portfolio</p>
+    <CustomButton text="get in contact"/>
   </>
 );
 
 export default Home;
-  
