@@ -27,22 +27,28 @@ export const Nav = styled.nav`
     li {
       display: flex;
       font-size: 1rem;
-      cursor: pointer;
+
       list-style: none;
       align-items: stretch;
       justify-content: stretch;
       color: ${({ theme }) => theme.white};
+
       a {
         padding: 1rem;
         cursor: pointer;
+        font-weight: 400;
         width: max-content;
-        transition: border 0.5s ease-in-out;
-        border-bottom: 0px solid ${({ theme }) => theme.white};
+        transition: border 5s ease-out;
         text-decoration: none;
         color: ${({ theme }) => theme.white};
         &:hover {
           border-bottom: 1px solid ${({ theme }) => theme.white};
         }
+      }
+    }
+    .isActive {
+      a {
+        color: ${({ theme }) => theme.gray};
       }
     }
   }
@@ -62,19 +68,6 @@ export const Nav = styled.nav`
       height: 85vh;
       overflow: hidden;
       opacity: 1;
-    }
-  }
-  @keyframes rollUp {
-    0% {
-      height: 85vh;
-      overflow: hidden;
-      padding: 20px 0;
-    }
-    100% {
-      height: 0;
-      overflow: hidden;
-      padding: 0 0;
-      visibility: hidden;
     }
   }
 `;
