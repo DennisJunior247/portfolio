@@ -1,9 +1,9 @@
+import Header from "../components/Header";
 
-import CustomButton from "../components/Buttons"
 const Home = () => (
   <>
-    <p>hi portfolio</p>
-    <CustomButton text="get in contact"/>
+    <Header />
+ 
   </>
 );
 

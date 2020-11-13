@@ -8,7 +8,7 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   outline: none;
-  border: 2px solid ${({ theme }) => theme.white};
+  border: 1px solid ${({ theme }) => theme.white};
   background: ${({ theme }) => theme.dark};
   color: ${({ theme }) => theme.white};
   cursor: pointer;

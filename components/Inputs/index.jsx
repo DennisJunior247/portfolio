@@ -1,20 +1,44 @@
 import React from "react";
-import { InputWrapper } from "./styles";
-import {useField} from "formik";
+import { InputWrapper, TextAreaWraaper } from "./styles";
 
-
-const CustomInput = ({...props}) => {
-  const [field] = useField(props)
+export const CustomInput = ({
+  name,
+  type,
+  label,
+  placeholder,
+  onChange,
+  ...otherProps
+}) => {
   return (
     <InputWrapper>
       <div className="input-container">
-        {props.label && <label htmlFor="">{props.label}</label>}
+        {label && <label htmlFor="">{label}</label>}
         <div className="field">
-          <input placeholder={props.placeholder} className="input" {...field} {...props} />
+          <input
+            name={name}
+            type={type}
+            placeholder={placeholder}
+            className="input"
+            onChange={onChange}
+            {...otherProps}
+          />
         </div>
       </div>
     </InputWrapper>
   );
 };
 
-export default CustomInput
+export const TextArea = ({ rows, cols, placeholder, ...otherProps}) => {
+  return (
+    <TextAreaWraaper>
+      <textarea
+        autoCapitalize
+        className={"text-area"}
+        placeholder={placeholder}
+        cols={cols}
+        rows={rows}
+        otherProps={otherProps}
+      />
+    </TextAreaWraaper>
+  );
+};
