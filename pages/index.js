@@ -1,9 +1,8 @@
-import Header from "../components/Header";
+import Header from "../components/Footer";
 
 const Home = () => (
   <>
-    <Header />
- 
+    <Header text={"@dennisjunior@gamil.com"} />
   </>
 );
 
