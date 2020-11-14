@@ -7,6 +7,6 @@ export const FlexibleDiv = styled.div`
   flex-wrap: ${(props) => props.flexWrap || "wrap"};
   flex-direction: ${(props) => props.flexDir || "row"};
   width: ${({ width }) => width || "100%"};
-  height: ${({ width }) => width || "auto"};
+  height: ${({ height }) => height || "auto"};
   background: ${(bgColor) => bgColor || "red"};
 `;

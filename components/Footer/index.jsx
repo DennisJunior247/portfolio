@@ -1,6 +1,8 @@
 import React from "react";
 import { FooterWrapper } from "./styles";
 import { FlexibleDiv } from "../CustomFlex/flexibleDiv.styles";
+
+
 const Index = ({ text }) => {
   return (
     <FooterWrapper>

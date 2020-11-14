@@ -1,11 +1,7 @@
-import React from "react"
+import React from "react";
 import Layout from "../components/Layouts";
+import LandingPage from "../screens/Landing";
 
-
-const Index = () => (
-  <Layout text={"@dennisjunior@gamil.com"}>
-  <div className={"den"}><h1>dshdyhhdsrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrhshkdkhdskhsdkhdskh</h1></div>
-  </Layout>
-);
+const Index = () => <LandingPage />;
 
 export default Index;

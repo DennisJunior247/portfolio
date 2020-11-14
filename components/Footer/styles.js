@@ -2,14 +2,24 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
   width: 100%;
-  padding: 15px;
+  height: 10%;
+  padding: 20px;
+  font-size: 14px;
+  font-style: italic;
   background-color: ${({ theme }) => theme.dark};
   color: ${({ theme }) => theme.white};
   a {
     text-decoration: none;
     font-style: italic;
     font-size: 14px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
     color: ${({ theme }) => theme.white};
+    &:hover {
+      transform: scale(1.5);
+      color: ${({ theme }) => theme.green};
+      cursor: pointer;
+    }
   }
   @media (max-width: 600px) {
     .flex-div {

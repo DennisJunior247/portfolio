@@ -1,20 +1,23 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  width: ${({ width }) => width || "10rem"};
-  padding: 10px;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   outline: none;
-  border: 1px solid ${({ theme }) => theme.white};
-  background: ${({ theme }) => theme.dark};
-  color: ${({ theme }) => theme.white};
+  border: none;
+  display: flex;
   cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  border-radius: 10rem;
+  padding: 0.8rem 3rem;
+  justify-content: center;
   text-transform: uppercase;
+  color: ${({ theme }) => theme.dark};
+  background: ${({ theme }) => theme.green};
   &:hover {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in;
     cursor: pointer;
+    border: 1px solid ${({ theme }) => theme.white};
+    background: ${({ theme }) => theme.dark};
+    color: ${({ theme }) => theme.white};
   }
 `;

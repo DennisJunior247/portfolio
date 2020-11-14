@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
   width: 100%;
-  height: 68px;
+  height: 10%;
   position: relative;
   background: ${({ theme }) => theme.dark};
 `;
@@ -39,11 +39,12 @@ export const Nav = styled.nav`
         cursor: pointer;
         font-weight: 400;
         width: max-content;
-        transition: border 5s ease-out;
+        transition: border 2s ease-in;
         text-decoration: none;
-        color: ${({ theme }) => theme.white};
+        color: ${({ theme }) => theme.green};
         &:hover {
-          border-bottom: 1px solid ${({ theme }) => theme.white};
+          /* border-bottom: 1px solid ${({ theme }) => theme.white}; */
+          transform:scale(1.5)
         }
       }
     }
@@ -66,7 +67,7 @@ export const Nav = styled.nav`
     }
     100% {
       padding: 20px 0;
-      height: 85vh;
+      height: 87vh;
       overflow: hidden;
       opacity: 1;
     }
@@ -75,7 +76,7 @@ export const Nav = styled.nav`
 
 export const IconBottons = styled.div`
   .icon-closed {
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 30px;
     font-size: 2.5rem;
   }
 `;

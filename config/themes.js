@@ -3,6 +3,7 @@ const dark = {
   gray: "#808080",
   light: "#cccccc",
   white: "#ffffff",
+  green:"#09f755"
 };
 
 const defaultStyle = {
