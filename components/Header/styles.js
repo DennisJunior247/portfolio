@@ -9,7 +9,7 @@ export const HeaderWrapper = styled.div`
 
 export const Nav = styled.nav`
   width: ${({ showMenu }) => (!showMenu ? "0%" : "100%")};
-  height: 85vh;
+  height: 88vh;
   position: absolute;
   z-index:1000;
   background: ${({ theme }) => theme.dark};
@@ -68,7 +68,7 @@ export const Nav = styled.nav`
     }
     100% {
       padding: 20px 0;
-      height: 90vh;
+      height: 88vh;
       overflow: hidden;
       opacity: 1;
     }
