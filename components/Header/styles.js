@@ -11,6 +11,7 @@ export const Nav = styled.nav`
   width: ${({ showMenu }) => (!showMenu ? "0%" : "100%")};
   height: 85vh;
   position: absolute;
+  z-index:1000;
   background: ${({ theme }) => theme.dark};
   display: ${({ showMenu }) => (showMenu ? "block" : "none")};
   animation: ${({ showMenu }) =>
@@ -67,7 +68,7 @@ export const Nav = styled.nav`
     }
     100% {
       padding: 20px 0;
-      height: 87vh;
+      height: 90vh;
       overflow: hidden;
       opacity: 1;
     }

@@ -1,13 +1,14 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import { HomepageWrapper } from "./styles";
 import Button from "../../components/Buttons";
 import { FlexibleDiv } from "../../components/CustomFlex/flexibleDiv.styles";
+import home from "../../assets/home-bg.svg";
 
 const Index = () => {
   const router = useRouter();
+
   return (
     <HomepageWrapper>
       <Header />
@@ -18,7 +19,7 @@ const Index = () => {
           width="50%"
         >
           <div className={"hero-text-container"}>
-            <div>
+            <div data-aos="fade">
               <p>Hello world 👋 I'M</p>
             </div>
             <div className={"Logo"}>
@@ -36,9 +37,13 @@ const Index = () => {
             <Button text={"contact me"} click={() => router.push("/contact")} />
           </div>
         </FlexibleDiv>
-        <FlexibleDiv className={"sideHero-text"} width={"50%"}></FlexibleDiv>
+        <FlexibleDiv className={"sideHero-text"} width={"50%"}>
+          <div>
+            <img src={home} alt="" />
+          </div>
+        </FlexibleDiv>
       </div>
-      <Footer text={"@dennisjunior247@gmail.com"} />
+      {/* <Footer text={"@dennisjunior247@gmail.com"} /> */}
     </HomepageWrapper>
   );
 };

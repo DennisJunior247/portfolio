@@ -6,11 +6,10 @@ export const HomepageWrapper = styled.div`
   height: 100vh;
   background: ${({ theme }) => theme.dark};
   .container {
-    height: 80%;
+    height: 90%;
     width: 100%;
     display: flex;
     .hero-text {
-      border: 1px solid blue;
       width: 50%;
       .hero-text-container {
         padding: 0 0 0 30px;
@@ -30,8 +29,7 @@ export const HomepageWrapper = styled.div`
           text-transform: uppercase;
           h1 {
             font-style: italic;
-            animation: nameAmin 4s linear forwards infinite;
-            /* font-weight:300; */
+            animation: nameAmin 5s linear 1s infinite;
             @media (max-width: 400px) {
               font-size: 20px;
             }
@@ -51,18 +49,39 @@ export const HomepageWrapper = styled.div`
           color: ${({ theme }) => theme.gray};
           p {
             font-size: 13px;
+            line-height: 1.5;
           }
         }
       }
       @media (max-width: 600px) {
         width: 100%;
-        /* justify-content:center; */
       }
     }
-
     .sideHero-text {
       width: 50%;
-      border: 1px solid red;
+      position: relative;
+      div {
+        right: 50px;
+        top: 1px;
+        overflow: hidden;
+        bottom: 10px;
+        transform: rotateX(360deg);
+        position: absolute;
+        @media (max-width: 950px) {
+          right: 10px;
+        }
+        @media (max-width: 800px) {
+          right: 10px;
+          width: 800px;
+          height: 600;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      /* border: 1px solid red; */
       @media (max-width: 600px) {
         display: none;
       }
@@ -70,13 +89,16 @@ export const HomepageWrapper = styled.div`
   }
   @keyframes nameAmin {
     0% {
-      color: red;
+      color: rgb(255, 173, 31);
     }
     50% {
-      color: blue;
+      color: rgb(29, 161, 242);
+    }
+    80% {
+      color: #ffff;
     }
     100% {
-      color: green;
+      color: rgb(244, 93, 34);
     }
   }
 `;
