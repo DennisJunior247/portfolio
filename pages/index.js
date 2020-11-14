@@ -1,9 +1,11 @@
-import Header from "../components/Footer";
+import React from "react"
+import Layout from "../components/Layouts";
 
-const Home = () => (
-  <>
-    <Header text={"@dennisjunior@gamil.com"} />
-  </>
+
+const Index = () => (
+  <Layout text={"@dennisjunior@gamil.com"}>
+  <div className={"den"}><h1>dshdyhhdsrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrhshkdkhdskhsdkhdskh</h1></div>
+  </Layout>
 );
 
-export default Home;
+export default Index;

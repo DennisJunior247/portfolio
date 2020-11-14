@@ -4,6 +4,7 @@ export const HeaderWrapper = styled.div`
   width: 100%;
   height: 68px;
   position: relative;
+  background: ${({ theme }) => theme.dark};
 `;
 
 export const Nav = styled.nav`

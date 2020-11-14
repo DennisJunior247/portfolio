@@ -1,22 +1,16 @@
-import React, {useState} from 'react';
-import Navigator from "./Navigator";
-import { GeneralLayout } from "./styles";
-import {MdMenu as OpenNav} from  'react-icons/md';
+import React from "react";
+import Header from "../Header";
+import Footer from "../Footer";
+import { Main } from "./styles";
 
-const Layout = ({ children }) => {
-  const [open, setOpen] = useState(undefined);
-
-  const handleOpen = () => {
-    setOpen(!open);
-  };
+const Layout = ({ childern }) => {
+  console.log(childern);
   return (
-    <GeneralLayout>
-      {/* <OpenNav onClick={handleOpen} style={{fontSize : "50px"}} className="open_menu"/> */}
-    
-     <Navigator className="nav"/>
-     
-      <main>{children}</main>
-    </GeneralLayout>
+    <div>
+      <Header />
+      <Main>{childern}</Main>
+      <Footer text={"@dennisjunior@gamil.com"} />
+    </div>
   );
 };
 

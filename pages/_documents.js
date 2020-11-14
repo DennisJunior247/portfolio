@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <title>EmBED LMS</title>
+          <title>PORTFOLIO</title>
 
           <meta
             name={"viewport"}
