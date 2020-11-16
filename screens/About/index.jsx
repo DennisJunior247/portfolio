@@ -14,7 +14,6 @@ const Index = () => {
         <FlexibleDiv
           height={"100%"}
           className={"typo-container"}
-          //   justifyContent="space-around"
           width={"60%"}
         >
           <div className={"header-text"}>
@@ -28,13 +27,12 @@ const Index = () => {
               with the companies standard, fast at learning and also fun to work
               with. <br></br>I am passionate about creating user delightful
               interfaces such as websites and mobile apps,based on the users
-              need that are Also easy and simple to use.
+              need that are Also easy and simple to use. <br></br>During my free
+              time i like to play video games and videography/content creating.
             </p>
           </div>
         </FlexibleDiv>
-        <div className={"img-container"}>
-          {/* <img src={dennis} alt="" /> */}
-        </div>
+        <div className={"img-container"}></div>
       </div>
     </AboutWrapper>
   );

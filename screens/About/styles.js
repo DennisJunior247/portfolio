@@ -37,7 +37,7 @@ export const AboutWrapper = styled.div`
       padding: 30px;
       /* padding: 0rem 3rem 3rem 3rem; */
       @media (max-width: 700px) {
-        padding: 15px;
+        padding: 15px 15px 15px 30px;
       }
       display: flex;
       flex-wrap: word-wrap;
@@ -50,6 +50,8 @@ export const AboutWrapper = styled.div`
   .img-container {
     height: 550px;
     width: 500px;
+    border-radius: 25px;
+    padding: 20px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url(${dennis});
     background-size: cover;

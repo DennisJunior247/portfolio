@@ -8,10 +8,10 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const Nav = styled.nav`
-  width: ${({ showMenu }) => (!showMenu ? "0%" : "100%")};
-  height: 88vh;
-  position: absolute;
-  z-index:1000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
   background: ${({ theme }) => theme.dark};
   display: ${({ showMenu }) => (showMenu ? "block" : "none")};
   animation: ${({ showMenu }) =>
@@ -44,8 +44,7 @@ export const Nav = styled.nav`
         text-decoration: none;
         color: ${({ theme }) => theme.green};
         &:hover {
-          /* border-bottom: 1px solid ${({ theme }) => theme.white}; */
-          transform:scale(1.5)
+          transform: scale(1.5);
         }
       }
     }
@@ -68,7 +67,7 @@ export const Nav = styled.nav`
     }
     100% {
       padding: 20px 0;
-      height: 88vh;
+      height: 100%;
       overflow: hidden;
       opacity: 1;
     }
