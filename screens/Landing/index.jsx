@@ -1,49 +1,39 @@
 import React from "react";
-import { useRouter } from "next/router";
+import Link from "next/link";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import { HomepageWrapper } from "./styles";
-import Button from "../../components/Buttons";
 import { FlexibleDiv } from "../../components/CustomFlex/flexibleDiv.styles";
 import home from "../../assets/home-bg.svg";
 
 const Index = () => {
-  const router = useRouter();
-
   return (
     <HomepageWrapper>
       <Header />
       <div className={"container"}>
         <FlexibleDiv
           justifyContent="flex-start"
-          className={"hero-text"}
+          className={"hero-text-box"}
           width="50%"
         >
           <div className={"hero-text-container"}>
-            <div data-aos="fade">
-              <p>Hello world 👋 I'M</p>
-            </div>
-            <div className={"Logo"}>
-              <h1>DennisJunior</h1>
-            </div>
-            <div>
-              <p> software devloper 👨‍💻</p>
-            </div>
-            <div>
-              <p>
-                I'm a web and mobile frontend developer <br></br>based in Aba
-                Abia state /Remote
-              </p>
-            </div>
-            <Button text={"contact me"} click={() => router.push("/contact")} />
+            <p>Hello world 👋 I'M</p>
+            <h1>Dennis Junior</h1>
+            <p> web+mobile devloper 👨‍💻</p>
+            <p>
+              I'm a web and mobile frontend developer.I am passionate about
+              creating user delightful interfaces such as websites and mobile
+              apps,based on the users need that are Also easy and simple to
+              use,based in Aba Abia state /Remote
+            </p>
           </div>
         </FlexibleDiv>
         <FlexibleDiv className={"sideHero-text"} width={"50%"}>
-          <div>
+          <div className={"img-container"}>
             <img src={home} alt="" />
           </div>
         </FlexibleDiv>
       </div>
-      {/* <Footer text={"@dennisjunior247@gmail.com"} /> */}
     </HomepageWrapper>
   );
 };

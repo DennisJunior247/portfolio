@@ -1,18 +1,34 @@
-import { keyframes } from "styled-components";
 import styled from "styled-components";
 
 export const HomepageWrapper = styled.div`
   width: 100%;
   height: 100vh;
   background: ${({ theme }) => theme.dark};
+
   .container {
     height: 90%;
     width: 100%;
     display: flex;
-    .hero-text {
+
+    .hero-text-box {
       width: 50%;
       .hero-text-container {
+        .footer {
+          position: relative;
+          z-index: 1;
+          margin-top: 70px;
+        }
         padding: 0 0 0 30px;
+        .href {
+          position: relative;
+          z-index: 1;
+          padding: 14px 50px;
+          cursor: pointer;
+          text-decoration: none;
+          background: ${({ theme }) => theme.dark};
+          border: 1px solid ${({ theme }) => theme.white};
+          color: ${({ theme }) => theme.white};
+        }
         div {
           margin-bottom: 20px;
           padding-bottom: 10px;
@@ -28,15 +44,14 @@ export const HomepageWrapper = styled.div`
         div:nth-child(2) {
           text-transform: uppercase;
           h1 {
-            font-style: italic;
-            animation: nameAmin 5s linear 1s infinite;
+            font-weight: 600;
             @media (max-width: 400px) {
-              font-size: 20px;
+              font-size: 30px;
             }
           }
         }
         div:nth-child(3) {
-          text-transform: uppercase;
+          text-transform: capitalize;
           margin-bottom: -3px;
           color: ${({ theme }) => theme.green};
           p {
@@ -44,13 +59,19 @@ export const HomepageWrapper = styled.div`
           }
         }
         div:nth-child(4) {
-          text-transform: uppercase;
           margin-top: 5px;
-          color: ${({ theme }) => theme.gray};
+          width: 90%;
+          color: ${({ theme }) => theme.white};
           p {
-            font-size: 13px;
+            font-size: 14px;
+            /* text-align: justify; */
             line-height: 1.5;
           }
+        }
+        @media (max-width: 600px) {
+         border:1px solid red;
+         margin:0px;
+         padding:0px;
         }
       }
       @media (max-width: 600px) {
@@ -60,7 +81,7 @@ export const HomepageWrapper = styled.div`
     .sideHero-text {
       width: 50%;
       position: relative;
-      div {
+      .img-container {
         right: 50px;
         top: 1px;
         overflow: hidden;
@@ -72,7 +93,7 @@ export const HomepageWrapper = styled.div`
         }
         @media (max-width: 800px) {
           right: 10px;
-          width: 800px;
+          width: 900px;
           height: 600;
           img {
             width: 100%;
@@ -80,25 +101,9 @@ export const HomepageWrapper = styled.div`
           }
         }
       }
-
-      /* border: 1px solid red; */
       @media (max-width: 600px) {
         display: none;
       }
-    }
-  }
-  @keyframes nameAmin {
-    0% {
-      color: rgb(255, 173, 31);
-    }
-    50% {
-      color: rgb(29, 161, 242);
-    }
-    80% {
-      color: #ffff;
-    }
-    100% {
-      color: rgb(244, 93, 34);
     }
   }
 `;

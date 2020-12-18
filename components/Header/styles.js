@@ -42,7 +42,7 @@ export const Nav = styled.nav`
         width: max-content;
         transition: border 2s ease-in;
         text-decoration: none;
-        color: ${({ theme }) => theme.green};
+        color: ${({ theme }) => theme.gray};
         &:hover {
           transform: scale(1.5);
         }
@@ -50,7 +50,7 @@ export const Nav = styled.nav`
     }
     .isActive {
       a {
-        color: ${({ theme }) => theme.gray};
+        color: ${({ theme }) => theme.green};
       }
     }
   }

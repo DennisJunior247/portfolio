@@ -7,7 +7,7 @@ const dark = {
 };
 
 const defaultStyle = {
-  fontFamily: "'IBM Plex Mono', monospace",
+  fontFamily: "'Poppins', sans-serif",
 };
 
 export const darktheme = { ...defaultStyle, ...dark };

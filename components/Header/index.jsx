@@ -6,14 +6,12 @@ import {
   RiCloseLine as OpenMenu,
 } from "react-icons/ri";
 import { HeaderWrapper, Nav, IconBottons } from "./styles";
-import FlexibleDiv from "../CustomFlex/flexibleDiv.styles";
 const Index = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const Links = [
     { href: "/", lable: "HOME" },
-    { href: "/about", lable: "ABOUT ME" },
-    { href: "/skills", lable: "SKILLS" },
+    { href: "/resume", lable: "RESUME" },
     { href: "/projects", lable: "PROJECTS" },
     { href: "/contact", lable: "CONTACT ME" },
   ];
