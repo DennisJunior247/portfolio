@@ -1,13 +1,14 @@
 const dark = {
-  dark: "#090909",
+  dark: "#293335",
   gray: "#808080",
   light: "#cccccc",
-  white: "#ffffff",
-  green:"#09f755"
+  white: "#f4f4f4",
+  green: "#09f755",
 };
 
 const defaultStyle = {
-  fontFamily: "'Poppins', sans-serif",
+ 
+  fontFamily: "'Josefin Sans', sans-serif",
 };
 
 export const darktheme = { ...defaultStyle, ...dark };

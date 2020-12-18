@@ -20,7 +20,7 @@ const Index = () => {
   const isActive = (href) => router.pathname === href;
 
   return (
-    <HeaderWrapper showMenu={showMenu}>
+    <div showMenu={showMenu}>
       <IconBottons>
         {!showMenu && (
           <CloseMenu
@@ -52,7 +52,7 @@ const Index = () => {
         ))}
           </div>
       </Nav>
-    </HeaderWrapper>
+    </div>
   );
 };
 

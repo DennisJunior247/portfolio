@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const HeaderWrapper = styled.div`
-  width: 100%;
-  height: 10%;
-  position: relative;
-  background: ${({ theme }) => theme.dark};
-`;
-
 export const Nav = styled.nav`
   width: 100%;
   height: 100%;
@@ -15,9 +8,9 @@ export const Nav = styled.nav`
   background: ${({ theme }) => theme.dark};
   display: ${({ showMenu }) => (showMenu ? "block" : "none")};
   animation: ${({ showMenu }) =>
-    showMenu
+    showMenu === true
       ? "rollDown 1s ease-in forwards"
-      : " 1s  ease-out forwards rollUp"};
+      : "rollUp 1s ease-in forwards"};
 
   .header-container {
     width: 100%;
@@ -28,12 +21,10 @@ export const Nav = styled.nav`
     flex-direction: column;
     li {
       display: flex;
-      font-size: 1rem;
-
+      font-size: 1.5rem;
       list-style: none;
       align-items: stretch;
       justify-content: stretch;
-      color: ${({ theme }) => theme.white};
 
       a {
         padding: 1rem;
@@ -42,7 +33,7 @@ export const Nav = styled.nav`
         width: max-content;
         transition: border 2s ease-in;
         text-decoration: none;
-        color: ${({ theme }) => theme.gray};
+        color: ${({ theme }) => theme.white};
         &:hover {
           transform: scale(1.5);
         }
@@ -75,8 +66,13 @@ export const Nav = styled.nav`
 `;
 
 export const IconBottons = styled.div`
+  position: fixed;
+  z-index: 3000;
+  width: 100px;
   .icon-closed {
-    margin: 20px 0 0 30px;
+    margin: 20px 0 0 50px;
     font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 1000;
   }
 `;
