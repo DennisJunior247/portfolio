@@ -8,7 +8,7 @@ const dark = {
 
 const defaultStyle = {
  
-  fontFamily: "'Josefin Sans', sans-serif",
+  // fontFamily: "'Josefin Sans', sans-serif",
 };
 
 export const darktheme = { ...defaultStyle, ...dark };

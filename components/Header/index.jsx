@@ -20,7 +20,7 @@ const Index = () => {
   const isActive = (href) => router.pathname === href;
 
   return (
-    <div showMenu={showMenu}>
+    <div>
       <IconBottons>
         {!showMenu && (
           <CloseMenu
@@ -37,20 +37,19 @@ const Index = () => {
       </IconBottons>
 
       <Nav showMenu={showMenu}>
-          <div className={"header-container"}>
-
-        {Links.map(({ href, lable }, idx) => (
-          <li
-            onClick={() => setShowMenu(!showMenu)}
-            key={`${idx}-${lable} *3`}
-            className={isActive(href) ? "isActive" : ""}
-          >
-            <Link href={href}>
-              <a> {lable}</a>
-            </Link>
-          </li>
-        ))}
-          </div>
+        <div className={"header-container"}>
+          {Links.map(({ href, lable }, idx) => (
+            <li
+              onClick={() => setShowMenu(!showMenu)}
+              key={`${idx}-${lable} *3`}
+              className={isActive(href) ? "isActive" : ""}
+            >
+              <Link href={href}>
+                <a> {lable}</a>
+              </Link>
+            </li>
+          ))}
+        </div>
       </Nav>
     </div>
   );

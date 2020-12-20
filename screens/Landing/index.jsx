@@ -3,11 +3,9 @@ import Link from "next/link";
 import Header from "../../components/Header";
 import { HomepageWrapper } from "./styles";
 import { FlexibleDiv } from "../../components/CustomFlex/flexibleDiv.styles";
-
 const Index = () => {
   return (
     <HomepageWrapper>
-      <Header/>
       <div className=" description_container">
         <h1 className="description_header">Hi,i'm Dennis Junior</h1>
         <p className="description">

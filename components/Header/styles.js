@@ -68,11 +68,22 @@ export const Nav = styled.nav`
 export const IconBottons = styled.div`
   position: fixed;
   z-index: 3000;
-  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 3000;
+  top: 1.5rem;
+  right: 1.5rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   .icon-closed {
-    margin: 20px 0 0 50px;
+    color: #5555;
     font-size: 2.5rem;
-    cursor: pointer;
-    z-index: 1000;
+    z-index: 3000;
   }
 `;
