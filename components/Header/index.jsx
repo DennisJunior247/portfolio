@@ -10,10 +10,8 @@ const Index = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const Links = [
-    { href: "/", lable: "HOME" },
-    { href: "/resume", lable: "RESUME" },
-    { href: "/projects", lable: "PROJECTS" },
-    { href: "/contact", lable: "CONTACT ME" },
+    { href: "/", lable: "ABOUT" },
+    { href: "/blog", lable: "BLOG" },
   ];
 
   const router = useRouter();

@@ -1,7 +1,8 @@
 import React from "react";
-import Header from "../../components/Header";
 import { AboutWrapper } from "./styled";
-import { FlexibleDiv } from "../../components/CustomFlex/flexibleDiv.styles";
+
+
+
 const Index = () => {
   return (
     <AboutWrapper>

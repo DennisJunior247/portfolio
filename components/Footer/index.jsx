@@ -1,26 +1,25 @@
 import React from "react";
 import { FooterWrapper } from "./styles";
-import { FlexibleDiv } from "../CustomFlex/flexibleDiv.styles";
-import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
 
-const Index = ({ text }) => {
+const Index = () => {
   return (
     <FooterWrapper>
-      <FlexibleDiv
-        className={"link-div"}
-        justifyContent="space-around"
-        width={"100%"}
-      >
-        <a href={"https://github.com/DennisJunior247"}>
-          <AiFillGithub className="icon" />
-        </a>
-        <a href={"https://www.linkedin.com/in/dennis-junior"}>
-          <AiFillLinkedin className="icon" />
-        </a>
-        <a href={"https://twitter.com/dennisjunior247"}>
-          <AiOutlineTwitter className="icon" />
-        </a>
-      </FlexibleDiv>
+      <ul>
+        <li>
+          <a>Linkedin</a>
+        </li>
+        <li>
+          <a>Twitter</a>
+        </li>
+        <li>
+          <a >GitHub</a>
+        </li>
+        <li>
+          <a href="mailto:dennisjunior247@gmail.com" href="">
+            Email
+          </a>
+        </li>
+      </ul>
     </FooterWrapper>
   );
 };
