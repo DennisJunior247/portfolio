@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <ContactWrapper>
       <div className=" description_container">
-        <h1 className="description_header">Contact Me?</h1>
+        <h1 className="description_header">Get In Touch!</h1>
         <p className="description">
           Hi,i'm currently searching for a job,i have been coding for a year now
           and i am familar with javascript(typescript) and its framework and i

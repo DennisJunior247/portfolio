@@ -9,7 +9,7 @@ const Index = () => {
       <div className=" description_container">
         <h1 className="description_header">More About Me?</h1>
         <p className="description">
-          I am a web and mobile frontend Devloper,background includes team
+          I am a web and mobile javascript frontend Devloper,background includes team
           collaboration and leadership abilites ,performance optimization,
           writing clean code in line with the companies standard, fast at
           learning and also fun to work with.

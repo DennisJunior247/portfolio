@@ -1,6 +1,6 @@
 import Document from "next/document";
 import { ServerStyleSheet } from "styled-components";
-import "../public/styles.css"
+import "../public/styles.css";
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();
@@ -40,7 +40,10 @@ export default class MyDocument extends Document {
             user-scalable={"no"}
           />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200&display=swap" rel="stylesheet"/>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+            rel="stylesheet"
+          />
         </Head>
 
         <body>

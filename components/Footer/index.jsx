@@ -14,11 +14,11 @@ const Index = () => {
         <li>
           <a >GitHub</a>
         </li>
-        <li>
+        {/* <li>
           <a href="mailto:dennisjunior247@gmail.com" href="">
             Email
           </a>
-        </li>
+        </li> */}
       </ul>
     </FooterWrapper>
   );

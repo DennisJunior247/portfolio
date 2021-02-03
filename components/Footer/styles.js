@@ -7,13 +7,13 @@ export const FooterWrapper = styled.footer`
   margin: 0 auto;
   width: 100%;
   ul {
-    padding: 4rem;
+    padding: 3rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     @media (max-width: 762px) {
-      flex-direction: column;
-      padding: 3rem;
+      /* flex-direction: column;
+      padding: 3rem; */
     }
     li {
       text-decoration: none;
@@ -21,6 +21,7 @@ export const FooterWrapper = styled.footer`
       transition: all 0.2s;
       @media (max-width: 762px) {
         margin-bottom: 1.2rem;
+        margin-left:1.5rem;
       }
       &:hover {
         transform: scale(1.3);

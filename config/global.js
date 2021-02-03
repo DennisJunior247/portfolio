@@ -13,6 +13,6 @@ export const GlobalStyles = createGlobalStyle`
 
   
     color: ${({ theme }) => theme.white};
-  font-family: 'Courier New', Courier, monospace;
+font-family: 'Poppins', sans-serif;
      transition: all 0.3s ease-in-out;
   }`;

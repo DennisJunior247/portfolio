@@ -1,11 +1,11 @@
 import React from "react";
-// import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Landing from "./Landing";
 import About from "./About";
 import Works from "./Works";
 import Contact from "./Contact";
+
 
 const Index = () => {
   return (

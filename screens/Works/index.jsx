@@ -10,20 +10,20 @@ const Index = () => {
       projectimage: Travel,
       title: "Food Recipe App",
       discription:
-        "This is a mini project used in finding recipes for food, the data is from a food recipe APi,javascript,react and styled-components.",
+        "This is a mini project used in finding recipes for food.",
       viewSite: "View",
     },
     {
       projectimage: Landing,
       title: "Landing Page Ui ",
       discription:
-        "This is a mini project used in finding recipes for food, the data is from a food recipe APi,javascript,react and styled-components.",
+        "This is a mini project used in finding recipes for food.",
     },
     {
       projectimage: Commerce,
       title: "E-commerce App ",
       discription:
-        "This is a mini project used in finding recipes for food, the data is from a food recipe APi,javascript,react and styled-components.",
+        "This is a mini project used in finding recipes for food,the data is from a food recipe APi.",
       viewSite: "www.google.com",
     },
   ];
@@ -33,6 +33,8 @@ const Index = () => {
     <WorksWrapper>
       <div className="row">
         <h1 className="description_header"> My Projects</h1>
+        <div className="wrapper">
+
         {projectArray.map((item, id) => (
           <div className="project_container" key={`${item}+${id}`}>
             <div className="img_container">
@@ -49,6 +51,7 @@ const Index = () => {
             </div>
           </div>
         ))}
+        </div>
       </div>
     </WorksWrapper>
   );
