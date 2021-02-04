@@ -1,13 +1,12 @@
 import styled from "styled-components";
-import Pic from "../../assets/bg.jpg";
+
+
 export const HomepageWrapper = styled.div`
+  visibility: hidden;
   position: relative;
   height: 100vh;
   min-height: 600px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
-    url(${Pic});
-  background-size: cover;
-  background-position: 50%;
+  background: #293335;
   text-align: center;
   .description_container {
     position: absolute;

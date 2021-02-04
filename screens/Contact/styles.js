@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactWrapper = styled.div`
-  /* text-align: center; */
+  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,9 +24,9 @@ export const ContactWrapper = styled.div`
     .description_header:after {
       content: "";
       display: block;
-      margin: 1rem auto;
+      margin: 2rem auto;
       height: 2px;
-      width: 7rem;
+      width: 6.5rem;
       background-color: #777;
     }
     .description {

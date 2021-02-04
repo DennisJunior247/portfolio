@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const WorksWrapper = styled.div`
+visibility:hidden;
   width: 100%;
   background: #293335;
   display: flex;
@@ -10,7 +11,6 @@ export const WorksWrapper = styled.div`
   .description_header {
     padding: 2rem 0;
     font-weight: 300;
-    /* margin-bottom: 40px; */
     color: #fff;
     font-size: 2.5rem;
     text-align: center;
@@ -22,7 +22,7 @@ export const WorksWrapper = styled.div`
   .description_header:after {
     content: "";
     display: block;
-    margin: 1rem auto;
+    margin: 2rem auto;
     height: 2px;
     width: 6rem;
     background-color: #fff;
