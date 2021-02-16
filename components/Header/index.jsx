@@ -11,7 +11,7 @@ const Index = () => {
 
   const Links = [
     { href: "/", lable: "ABOUT" },
-    { href: "/blog", lable: "BLOG" },
+    { href: "https://dennisjunior247.medium.com/", lable: "BLOG" },
   ];
 
   const router = useRouter();

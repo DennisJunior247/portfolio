@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactWrapper = styled.div`
-  visibility: hidden;
+  /* visibility: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;

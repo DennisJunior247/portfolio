@@ -1,48 +1,48 @@
 import React, { useRef, useEffect } from "react";
-import { gsap, Power3 } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+// import { gsap, Power3 } from "gsap/dist/gsap";
+// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import { ContactWrapper } from "./styles";
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const Index = () => {
-  let app = useRef(null);
-  let revealText = useRef(null);
-  let btn = useRef(null);
+  // let app = useRef(null);
+  // let revealText = useRef(null);
+  // let btn = useRef(null);
 
-  useEffect(() => {
-    const h1 = revealText.querySelector(".description_header");
-    const p = revealText.querySelector(".description");
+  // useEffect(() => {
+  //   const h1 = revealText.querySelector(".description_header");
+  //   const p = revealText.querySelector(".description");
 
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: app,
-        start: "bottom bottom",
-      },
-    });
-    tl.to(app, 0, {
-      css: { visibility: "visible" },
-    })
-      .from(h1, 0.7, {
-        opacity: 0,
-        x: -40,
-        y: 40,
-        ease: Power3.easeIn,
-      })
-      .from(p, 0.7, {
-        opacity: 0,
-        ease: Power3.easeOut,
-      })
-      .from(btn, 0.5, {
-        opacity: 0,
-        y:40,
-        ease: Power3.easeOut,
-      });
-  });
+  //   let tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: app,
+  //       start: "bottom bottom",
+  //     },
+  //   });
+  //   tl.to(app, 0, {
+  //     css: { visibility: "visible" },
+  //   })
+  //     .from(h1, 0.7, {
+  //       opacity: 0,
+  //       x: -40,
+  //       y: 40,
+  //       ease: Power3.easeIn,
+  //     })
+  //     .from(p, 0.7, {
+  //       opacity: 0,
+  //       ease: Power3.easeOut,
+  //     })
+  //     .from(btn, 0.5, {
+  //       opacity: 0,
+  //       y:40,
+  //       ease: Power3.easeOut,
+  //     });
+  // });
 
   return (
-    <ContactWrapper ref={(e) => (app = e)}>
-      <div ref={(e) => (revealText = e)} className=" description_container">
+    <ContactWrapper >
+      <div  className=" description_container">
         <h1 className="description_header">Get In Touch!</h1>
         <p className="description">
           Hi,i'm currently searching for a job,i have been coding for a year now
@@ -53,7 +53,7 @@ const Index = () => {
             dennisjunior247@gmail.com
           </a>
         </p>
-        <div ref={(e) => (btn = e)} className="link_div">
+        <div  className="link_div">
           <a
             target="_blank"
             href="https://drive.google.com/file/d/1ipO4D9YRltNSgZQhTTst3Z6ktUzgEBGj/view?usp=sharing"

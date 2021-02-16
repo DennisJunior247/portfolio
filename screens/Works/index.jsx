@@ -51,8 +51,7 @@ const Index = () => {
     });
 
     card.current.forEach((card, i) => {
-
-      TweenMax.from(card,0.7, {
+      TweenMax.from(card, 0.7, {
         x: -40,
         opacity: 0,
         ease: Power3.easeIn,
@@ -60,7 +59,6 @@ const Index = () => {
           id: `section ${i - 1}`,
           trigger: card,
           start: "top center+=100",
-          toggleActions: "play none none reverse",
         },
       });
     });
