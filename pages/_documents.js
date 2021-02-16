@@ -1,6 +1,5 @@
 import Document, { Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
-// import "../public/styles.css";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -32,7 +31,6 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <style>{styles}</style>
           <title>PORTFOLIO</title>
 
           <meta
