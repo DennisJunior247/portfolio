@@ -12,20 +12,22 @@ const Index = () => {
   const projectArray = [
     {
       projectimage: Travel,
-      title: "Food Recipe App",
-      discription: "This is a mini project used in finding recipes for food.",
+      title: "Food Recipe",
+      discription:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus nam atque assumenda consequatur placeat ullam iste vitae neque officia illum beatae.",
       viewSite: "View",
     },
     {
       projectimage: Landing,
-      title: "Landing Page Ui ",
-      discription: "This is a mini project used in finding recipes for food.",
+      title: "Blog",
+      discription:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus nam atque assumenda consequatur placeat ullam iste vitae neque officia illum beatae.",
     },
     {
       projectimage: Commerce,
       title: "E-commerce App ",
       discription:
-        "This is a mini project used in finding recipes for food,the data is from a food recipe APi.",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus nam atque assumenda consequatur placeat ullam iste vitae neque officia illum beatae.",
       viewSite: "www.google.com",
     },
   ];
