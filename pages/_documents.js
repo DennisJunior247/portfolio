@@ -1,6 +1,5 @@
 import Document, { Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
-import styleSheet from "styled-components/lib/models/StyleSheet";
 // import "../public/styles.css";
 
 export default class MyDocument extends Document {
@@ -30,12 +29,6 @@ export default class MyDocument extends Document {
     }
   }
   render() {
-    const styles = this.props.isServer
-      ? styleSheet
-          .rules()
-          .map((rule) => rule.cssText)
-          .join("\n")
-      : null;
     return (
       <html lang="en">
         <Head>
